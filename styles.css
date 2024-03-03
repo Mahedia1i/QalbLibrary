@@ -1,0 +1,533 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+     :root {
+        --primary-color: #022632;
+        --secondary-color: #00e77f;
+        --white-color: #fff;
+        --gray: #aaa;
+        ---black-color: #000000;
+    }
+    
+    * {
+        font-family: 'Rubik', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        border: none;
+        text-decoration: none;
+        transition: .2s linear;
+        text-transform: capitalize;
+    }
+    
+    *::selection {
+        background-color: var(--white-color);
+        color: var(---black-color);
+    }
+    
+    html {
+        font-size: 62.5%;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+        scroll-padding-top: 8rem;
+    }
+    
+    body {
+        background-color: var(--white-color);
+    }
+    
+    .home {
+        margin: 6rem;
+    }
+    
+    .home .row {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    
+    .home .row .content {
+        text-align: center;
+        width: 50%;
+    }
+    
+    .home .row .image {
+        text-align: center;
+        width: 35%;
+    }
+    
+    .home .row .image img {
+        width: 100%;
+    }
+    
+    .home .row .content h3 {
+        margin-bottom: 1rem;
+        font-size: 6rem;
+        color: var(--primary-color);
+        line-height: 1;
+    }
+    
+    .home .row .content h3 span {
+        color: var(--secondary-color);
+    }
+    
+    .ir {
+    margin-top: 20px; /* Adjust margin as needed */
+}
+
+.irbtn {
+    padding: 15px 30px; /* Adjust padding */
+    font-size: 1.5rem; /* Adjust font size */
+    margin: 0 10px; /* Adjust margin to create space between buttons */
+    border-radius: 8px; /* Adjust border radius */
+    background-color: #022632; /* Dark background color */
+    color: #fff; /* Text color */
+    border: none;
+    cursor: pointer;
+}
+
+.irbtn:hover {
+    background-color: #00e77f; /* Change color on hover */
+    color: #000; /* Text color on hover */
+}
+        
+    .count .box-container {
+        display: flex;
+        grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+        gap: 1.5rem;
+        align-items: flex-start;
+    }
+    
+    .count .box-container .box {
+        background-color: var(--primary-color);
+        border-radius: .5rem;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5rem;
+    }
+    
+    .count .box-container .box i {
+        font-size: 4rem;
+        color: var(--secondary-color);
+    }
+    
+    .count .box-container .box .content h3 {
+        font-size: 2rem;
+        color: var(--white-color);
+        margin-bottom: .5rem;
+    }
+    
+    .count .box-container .box .content p {
+        font-size: 1.6rem;
+        color: var(--white-color);
+    }
+    
+    .about
+    {
+        padding:2px;
+        }
+    
+    .about .row {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+    }
+    
+    .about .row .image {
+        flex: 1 1 40rem;
+    }
+    
+    .about .row .image {
+        text-align: center;
+        width: 35%;
+    }
+    
+    .about .row .content {
+        text-align: center;
+        flex: 1 1 40rem;
+    }
+    
+    .about .row .content h3 {
+        font-size: 3rem;
+        color: var(--white-color);
+    }
+    
+    .about .row .content p {
+        padding: 1rem 0;
+        line-height: 2;
+        font-size: 1.6rem;
+        color: var(--gray-color);
+    }
+
+        .footer
+        {
+            padding: 1rem ;
+            background-color: var(--primary-color);
+            text-align: center;
+        }
+
+        .footer .share a{
+            margin: 0 .3rem;
+            height: 4.5rem;
+            width: 4.5rem;
+            line-height: 4.5rem;
+            border-radius: 50%;
+            font-size: 2rem;
+            color: var(--primary-color);
+            background-color: var(--secondary-color);
+        }
+        
+        .footer .share a:hover{
+            background-color: var(--secondary-color);
+        }
+
+        .footer .credit{
+            margin-top: 2.5rem;
+            padding-top: 2.5rem;
+            padding: 2rem;
+            border-top: .1rem solid var(--gray);
+            flex-basis: 2rem;
+            color: var(--gray);
+            font-size: small;
+        }
+
+        .footer .credit span{
+        color: var(--secondary-color);
+        }
+        
+        /* Reset default styles */
+        
+        /* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px; /* Increased padding */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    font-size: 2.5rem; /* Increased font size */
+}
+
+/* Profile Info Styles */
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px; /* Increased margin */
+}
+
+.profile-picture {
+    width: 200px; /* Increased width */
+    height: 200px; /* Increased height */
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-details {
+    flex: 1;
+    margin-left: 40px; /* Increased margin */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.file-upload-button {
+    display: block;
+    padding: 15px 30px; /* Increased padding */
+    font-size: 1.5rem; /* Increased font size */
+    background-color: #00e77f;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Profile Details Styles */
+.profile-details {
+    flex: 1;
+}
+
+.profile-details label {
+    display: block;
+    margin-bottom: 10px; /* Increased margin */
+    font-weight: bold;
+    font-size: 1.5rem; /* Increased font size */
+}
+
+.profile-details input[type="text"] {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    margin-bottom: 15px; /* Increased margin */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.5rem; /* Increased font size */
+}
+
+/* Button Styles */
+button {
+    padding: 15px 30px; /* Increased padding */
+    font-size: 1.5rem; /* Increased font size */
+    background-color: #00e77f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.text-danger
+{
+    color:Red;
+    font-size:1.3rem;
+    }
+
+button:hover {
+    background-color: #009e5a;
+}
+
+/* Download iCard Styles */
+.download-icard {
+    display: block;
+    margin-top: 30px; /* Increased margin */
+    text-align: center;
+    text-decoration: none;
+    color: #00e77f;
+    font-weight: bold;
+    font-size: 1.5rem; /* Increased font size */
+}
+
+.download-icard:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.buttonsave {
+    padding: 15px 30px; /* Increased padding */
+    font-size: 1.5rem; /* Increased font size */
+    background-color: #00e77f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buttonsave:hover {
+    background-color: #009e5a;
+}
+
+.dload {
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+    color: #00e77f;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 250px;
+    background-color:transparent;
+}
+
+.dload:hover {
+    text-decoration: underline;
+    background-color:transparent;
+}
+
+.back {
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+    color: #00e77f;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 250px;
+}
+
+.back:hover {
+    text-decoration: underline;
+}
+
+
+/* Profile picture container */
+.profile-picture {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile picture */
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Profile details container */
+.profile-details {
+    margin-left: 50px;
+    padding: 20px;
+}
+
+/* Rows container */
+.rows {
+    margin-bottom: 10px; /* Add margin between rows */
+    position: relative;
+}
+
+.row-line {
+    position: absolute; 
+    bottom: 0;
+    left: 0; 
+    width: 80%; 
+    height: 1px; 
+    background-color: #ccc; 
+}
+
+/* Profile labels */
+.profile-label {
+    font-weight: bold;
+    color: #333;
+    padding-right: 10px; /* Add padding to space out the label from the text */
+    color: #6c757d;
+}
+
+/* Profile text */
+.profile-text {
+    color: #555;
+    font-size: 1.8rem;
+}
+
+/* Profile picture container */
+.profiles-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px; /* Add margin to space out the picture */
+}
+
+/* Profile picture */
+.profiles-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*book*/
+.nav-book {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:10px;
+}
+
+.book-card {
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.book-image {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    object-fit: contain; /* Maintain aspect ratio without cropping */
+    margin-bottom: 10px;
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.book-title {
+    font-size: 18px; /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.book-author {
+    font-size: 14px; /* Adjust font size as needed */
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-decoration:underline;
+    padding:10px;
+}
+
+.btext
+{
+    width: 401px;
+    height: 51px;
+    padding:10px;
+    }
+    
+    
+
+.book-description {
+    font-size: 14px;
+    padding:10px;
+    height:68px;
+    width:401px;
+}
+
+.issue {
+    display: inline-block;
+    vertical-align: top; 
+    margin-right: 20px; 
+    width:100%;
+    
+}
+
+.issue .issue-btn {
+    background-color: #022632;
+    width: 100%;    
+    color: White;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.issue .issue-btn:hover {
+    background-color: #00e77f;
+}
+
+.isheading {
+        text-align: center;
+        padding: 20px 0;
+        color:  #022632;
+    }
+    
+    @media print {
+    /* Hide headings */
+    h2 {
+        display: none;
+    }
+    
+    /* Hide buttons */
+    .buttonsave,
+    .dload {
+        display: none;
+    }
+}
+
+
+
+
