@@ -78,6 +78,7 @@
     <Content Include="books.aspx" />
     <Content Include="profileimage\IMG20210729224116-01_1.jpeg" />
     <Content Include="profileimage\IMG_20221121_161346_587.jpg" />
+    <Content Include="profileimage\IMG_20221121_161413_747.jpg" />
     <Content Include="return.aspx" />
     <Content Include="signup.aspx" />
     <Content Include="styles.css" />
